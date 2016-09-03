@@ -1,0 +1,53 @@
+#escudos
+{
+	background: #1c3d6c;
+}
+
+#logo_unam
+{
+	height: 110px;
+	margin: 15px 0 15px 0;
+}
+
+#menu
+{
+	border-color: #1c3d6c;
+	background: #1c3d6c;
+	margin-bottom: 0px;
+}
+
+#menu ul
+{
+	background: #1c3d6c;
+}
+
+#menu li
+{
+	padding: 0 10px 0 10px;
+}
+
+#menu li a
+{
+	color: white;
+	font-weight: bold;
+}
+
+#menu li.active a
+{
+	background: #c5911f;
+
+}
+
+#carousel
+{
+	margin: 6px 0 6px 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #1c3d6c;
+}
