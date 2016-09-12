@@ -43,11 +43,25 @@
 	margin: 6px 0 6px 0;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 90px;
+}
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
+  height: 90px;
   background-color: #1c3d6c;
+}
+
+.footer p
+{
+	color: white;
+	font-weight: bold;
 }
