@@ -5,8 +5,19 @@
 
 #logo_unam
 {
-	height: 110px;
-	margin: 15px 0 15px 0;
+
+	width: 100%;
+	margin: 20px 0 20px 0;
+}
+
+.titulo_consejo
+{
+	color: white;
+}
+
+.titulo_consejo span
+{
+	display: block;
 }
 
 #menu
@@ -26,10 +37,21 @@
 	padding: 0 10px 0 10px;
 }
 
+#menu li.open a
+{
+	background-color: #1c3d6c;
+}
+
 #menu li a
 {
 	color: white;
 	font-weight: bold;
+	font-size: 17px;
+}
+
+#menu li a:hover
+{
+	background-color: #c5911f;
 }
 
 #menu li.active a
@@ -38,24 +60,34 @@
 
 }
 
+@media (max-width: 1120px)
+{
+	#logo_div
+	{
+		display: none;
+	}
+}
+
 #carousel
 {
-	margin: 6px 0 6px 0;
+	margin: 12px 0 12px 0;
 }
+
+
+
+
 
 html {
   position: relative;
   min-height: 100%;
 }
 body {
-  /* Margin bottom by footer height */
   margin-bottom: 90px;
 }
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 90px;
   background-color: #1c3d6c;
 }
