@@ -68,13 +68,26 @@
 	}
 }
 
-#carousel
+#content
 {
-	margin: 12px 0 12px 0;
+	margin: 30px 0 30px 0;
 }
 
+.miniaturas
+{
+	margin: 20px 0 20px 0;
+}
 
+.profilecard
+{
+	margin-bottom: 0px;
+}
 
+.quienes-panel p
+{
+	text-align: justify;
+	font-size: 15px;
+}
 
 
 html {

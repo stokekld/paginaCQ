@@ -15,9 +15,19 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/customize.css" rel="stylesheet">
 
+    <!-- Page.js -->
+    <script src="js/page.js"></script>
+    <base href="/caabqys/" >
+
     <!-- Carousel -->
     <link rel="stylesheet" type="text/css" href="carousel/engine8/style.css" />
     <script type="text/javascript" src="carousel/engine8/jquery.js"></script>
+
+    <!-- ProfileCard -->
+    <link rel="stylesheet" type="text/css" href="css/profilecard.css" />
+
+    <link rel='stylesheet' type='text/css' href="css/jquery.kwicks.min.css" />
+    
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
@@ -75,30 +85,31 @@
                                 <div class="collapse navbar-collapse">
                                     <ul class="nav navbar-nav">
                                         <li class="active">
-                                            <a class="modulo" href="principal.html">Inicio</a>
+                                            <a href="./">Inicio</a>
                                         </li>
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle">Consejo</a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="modulo" href="#">Dirección</a></li>
-                                                <li><a class="modulo" href="#">¿Quiénes somos?</a></li>
-                                                <li><a class="modulo" href="#">Ubicación</a></li>
+                                                <li><a href="#direccion">Dirección</a></li>
+                                                <li><a href="#quienes">¿Quiénes somos?</a></li>
+                                                <li><a href="#ubicacion">Ubicación</a></li>
+                                                <li><a href="#comisiones">Comisiones</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle">Entidades</a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="escuelas.html">Escuelas</a></li>
-                                                <li><a class="modulo" href="#">Facultades</a></li>
-                                                <li><a class="modulo" href="#">Centros</a></li>
-                                                <li><a class="modulo" href="#">Institutos</a></li>
+                                                <li><a href="#escuelas">Escuelas</a></li>
+                                                <li><a href="#facultades">Facultades</a></li>
+                                                <li><a href="#centros">Centros</a></li>
+                                                <li><a href="#institutos">Institutos</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a class="modulo" href="#">Ligas</a>
+                                            <a href="#ligas">Ligas</a>
                                         </li>
                                         <li>
-                                            <a class="modulo" href="#">Eventos</a>
+                                            <a href="#">Eventos</a>
                                         </li>
                                     </ul>                  
                                 </div><!-- /.navbar-collapse -->
@@ -134,41 +145,7 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
-    <script type="text/javascript">
-
-        var dropdown = $(".dropdown");
-        var modulo = $(".modulo");
-
-        $("#content").load("./content/principal.html");
-
-        dropdown.mouseover(function(){
-            $(this).addClass("open");
-        }).mouseout(function(){
-            dropdown.removeClass("open");
-        });
-
-        modulo.click(function(e){
-
-            e.preventDefault();
-
-            modulo.parent().removeClass("active");
-            $(this).parent().addClass("active");
-
-            pagina = $(this).attr("href");
-
-            if (pagina != "#" && pagina != "")
-                carga(pagina);
-
-        });
-
-        carga = function(pagina) {
-            console.log(pagina);
-
-            ruta = "./content/" + pagina
-
-            $("#content").load(ruta);
-
-        }
-    </script>
+    <script src='js/jquery.kwicks.min.js' type='text/javascript'></script>
+    <script src="js/control.js"></script>
 </body>
 </html>
