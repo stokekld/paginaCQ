@@ -1,0 +1,81 @@
+<style type='text/css'>
+    .kwicks-vertical {
+        width: 500px;
+        height: 500px;
+    }
+    /*.kwicks-vertical > li {
+        height: 145px;
+        margin-top: 5px;
+    }*/
+    .kwicks-horizontal {
+        width: 500px;
+        height: 100%;
+    }
+    .kwicks-horizontal > li {
+        height: 100%;
+        width: 145px;
+        float: left;
+        margin-left: 5px;
+        background-color: #ffaa00;
+    }
+
+    .kwicks li p
+    {
+        background: rgba(28,61,108,0.3);
+        position: absolute;
+        bottom: 0px;
+        left: 1%;
+        overflow: hidden;
+        width: 250px;
+    }
+    .kwicks li p a
+    {
+        font-weight: bold;
+        font-size: 20px;
+        color: #c5911f;
+    }
+</style>
+
+<div class="row slider-line">
+    <div class="col-md-4 col-md-offset-4">
+        <ul class='kwicks kwicks-vertical'>
+            <li>
+                <ul class='kwicks kwicks-horizontal'>
+                    <li>
+                        <img src="http://www.u-erre.mx/wp-content/uploads/2015/01/U-ERRE-Posgrado-38-300x300.jpg">
+                        <p><a href="#com_posgrado">COMISION ESPECIAL DE POSGRADO</a></p>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class='kwicks kwicks-horizontal'>
+                    <li>
+                    </li>
+                    <li>
+                        <img src="http://www.elprovincial.cl/~launion/wp-content/uploads/2016/06/comision-de-gobierno-descentralizacion-y-regionalizacion-del-senado2-300x300.jpg">
+                        <p><a href="#com_pride">COMISIÓN ESPECIAL DEL PRIDE</a></p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script type='text/javascript'>
+   $(function() {
+       $('.kwicks-vertical').kwicks({
+           maxSize : 300,
+           isVertical: true,
+           behavior: 'menu',
+           selectOnClick: false
+       });
+
+       $('.kwicks-horizontal').kwicks({
+           maxSize: 300,
+           behavior: 'menu',
+           selectOnClick: false
+       });
+   });
+</script>

@@ -24,9 +24,16 @@ dropdown.mouseover(function(){
     dropdown.removeClass("open");
 });
 
+modulo.click(function(e){
+
+    modulo.parent().removeClass("active");
+    $(this).parent().addClass("active");
+    
+});
+
 $().ready(function() {
-	            $('.kwicks').kwicks({
-	                maxSize : 250,
-	                behavior: 'menu'
-	            });
-	        });
+    $('.kwicks').kwicks({
+        maxSize : 250,
+        behavior: 'menu'
+    });
+});
