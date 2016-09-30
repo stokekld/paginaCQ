@@ -32,6 +32,7 @@ modulo.click(function(e){
 });
 
 $().ready(function() {
+
     $('.kwicks').kwicks({
         maxSize : 250,
         behavior: 'menu'

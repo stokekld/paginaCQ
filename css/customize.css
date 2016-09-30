@@ -1,11 +1,19 @@
-#escudos
+/*----------Head----------*/
+#head-page
 {
 	background: #1c3d6c;
 }
 
+@media (max-width: 990px)
+{
+	#logo_div
+	{
+		display: none;
+	}
+}
+
 #logo_unam
 {
-
 	width: 100%;
 	margin: 20px 0 20px 0;
 }
@@ -18,6 +26,20 @@
 .titulo_consejo span
 {
 	display: block;
+}
+
+#letras-logo
+{
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	font-size: 45px;
+}
+
+#subletras-logo
+{
+	margin-top: 0px;
+	margin-bottom: 2px;
+	font-size: 22px;
 }
 
 #menu
@@ -60,13 +82,9 @@
 
 }
 
-@media (max-width: 1120px)
-{
-	#logo_div
-	{
-		display: none;
-	}
-}
+/*----------End Head----------*/
+
+
 
 #content
 {
@@ -122,19 +140,7 @@ body {
 	height: 236px;
 }
 
-#letras-logo
-{
-	font-family: 'Playfair Display', serif;
-	font-weight: bold;
-	font-size: 45px;
-}
 
-#subletras-logo
-{
-	margin-top: 0px;
-	margin-bottom: 2px;
-	font-size: 22px;
-}
 
 .link-consejos
 {
