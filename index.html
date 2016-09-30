@@ -17,7 +17,7 @@
 
     <!-- Page.js -->
     <script src="js/page.js"></script>
-    <base href="/caabqys/" >
+    <base href="/devCaabqys/" >
 
     <!-- Carousel -->
     <link rel="stylesheet" type="text/css" href="carousel/engine8/style.css" />
@@ -26,8 +26,11 @@
     <!-- ProfileCard -->
     <link rel="stylesheet" type="text/css" href="css/profilecard.css" />
 
+    <!-- Cuadros -->
     <link rel='stylesheet' type='text/css' href="css/jquery.kwicks.min.css" />
     
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
@@ -59,10 +62,11 @@
                             </a>
 
                     </div>
-                    <div class="col-sm-7 col-sm-offset-5 col-md-6 col-md-offset-3">
+                    <div class="col-sm-7 col-sm-offset-5 col-md-3 col-md-offset-6">
                         <div class="text-right titulo_consejo">
-                            <span><h3>Consejo Académico del Área de las</h3></span>
-                            <span><h3>Ciencias Biológicas, Químicas y de la Salud</h3></span>
+                            <span><h3 id="letras-logo">CAABQYS</h3></span>
+                            <span><h4 id="subletras-logo">Consejo Académico del Área de las</h4></span>
+                            <span><h4 id="subletras-logo">Ciencias Biológicas, Químicas y de la Salud</h4></span>
                         </div>
                     </div>
                 </div>
@@ -91,7 +95,7 @@
                                             <a href="#" class="dropdown-toggle">Consejo</a>
                                             <ul class="dropdown-menu">
                                                 <li><a class="modulo" href="#quienes">¿Quiénes somos?</a></li>
-                                                <li><a class="modulo" href="#direccion">Dirección</a></li>
+                                                <li><a class="modulo" href="#direccion">Coordinación</a></li>
                                                 <li><a class="modulo" href="#comisiones">Comisiones</a></li>
                                                 <li><a class="modulo" href="#ubicacion">Ubicación</a></li>
                                             </ul>
@@ -126,11 +130,23 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="row text-center">
+            <div class="row text-center grupo-links-consejos">
                 <div class="col-md-8 col-md-offset-2">
-                <p>Consejo Académico del Área de las Ciencias Biológicas, Químicas y de la Salud.</p>
-                <p>Edificio de los Consejos Académicos. Circuito Exterior s/n. Ciudad Universitaria. C.P. 04510.</p>
-                <p>Ciudad de México Tel: 5622-1536 y 5622-1569. e-mail: caabqys@unam.mx</p>
+                    <span><a class="link-consejos" target="blank" href="http://www.caacfmi.unam.mx/">CAACFMI</a></span>
+                    <span><a class="link-consejos" target="blank" href="http://www.caahya.unam.mx/">CAAHYA</a></span>
+                    <span><a class="link-consejos" target="blank" href="http://www.caacs.unam.mx/">CAACS</a></span>
+                    <span><a class="link-consejos" target="blank" href="http://www.cab.unam.mx/">CAB</a></span>
+                    <span><a class="link-consejos" target="blank" href="http://www.uca.unam.mx/PaginaUCA/index.html">UCA</a></span>
+                </div>
+            </div>
+            <div class="row text-center info-consejo">
+                <div class="col-md-8 col-md-offset-2" align="center">
+                    <p>Consejo Académico del Área de las Ciencias Biológicas, Químicas y de la Salud.</p>
+                    <p>Edificio de los Consejos Académicos. Circuito Exterior s/n. Ciudad Universitaria. C.P. 04510.</p>
+                    <p>Ciudad de México Tel: 5622-1536 y 5622-1569. e-mail: caabqys@unam.mx</p>
+                    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-512.png">
+                    <img src="http://icons.iconarchive.com/icons/limav/flat-gradient-social/256/Twitter-icon.png">
+                    <img id="counter" src="http://counter9.01counter.com/private/freecounterstat.php?c=4dca713287e8a3625a5487afdcd013af">
                 </div>
             </div>
         </div>

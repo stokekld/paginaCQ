@@ -1,4 +1,4 @@
-page.base('/caabqys');
+page.base('/devCaabqys');
 
 page('/', carga); //principal
 page();
