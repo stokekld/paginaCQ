@@ -1,4 +1,6 @@
 /*----------Head----------*/
+
+
 #head-page
 {
 	background: #1c3d6c;
@@ -84,29 +86,7 @@
 
 /*----------End Head----------*/
 
-
-
-#content
-{
-	margin: 30px 0 30px 0;
-}
-
-.miniaturas
-{
-	margin: 20px 0 20px 0;
-}
-
-.profilecard
-{
-	margin-bottom: 0px;
-}
-
-.quienes-panel p
-{
-	text-align: justify;
-	font-size: 15px;
-}
-
+/*----------Footer----------*/
 
 html {
   position: relative;
@@ -123,6 +103,14 @@ body {
   background-color: #1c3d6c;
 }
 
+@media (max-width: 667px)
+{
+	.footer
+	{
+		height: 245px;
+	}
+}
+
 .footer p
 {
 	color: white;
@@ -134,20 +122,28 @@ body {
 	width: 30px;
 }
 
-.thumbnail-main
-{
-	width: 248px;
-	height: 236px;
-}
-
-
-
 .link-consejos
 {
 	color: #c5911f;
 	font-weight: bold;
-	margin: 0 50px 0 50px;
+	margin: 0 45px 0 45px;
 	text-decoration: none;
+}
+
+@media (max-width: 970px)
+{
+	.link-consejos
+	{
+		margin: 0 40px 0 40px;
+	}
+}
+
+@media (max-width: 768px)
+{
+	.link-consejos
+	{
+		margin: 0 5px 0 5px;
+	}
 }
 
 .grupo-links-consejos
@@ -164,4 +160,49 @@ body {
 {
 	display: block;
 	width: 100px;
+}
+
+/*----------End Footer----------*/
+
+
+/*----------Content----------*/
+
+#content
+{
+	margin: 30px 0 100px 0;
+}
+
+@media (max-width: 667px)
+{
+	#content
+	{
+		margin: 30px 0 150px 0;
+	}
+}
+
+/*----------End Content----------*/
+
+/*----------Principal----------*/
+
+.miniaturas
+{
+	margin: 20px 0 20px 0;
+}
+
+/*----------End Principal----------*/
+.profilecard
+{
+	margin-bottom: 0px;
+}
+
+.quienes-panel p
+{
+	text-align: justify;
+	font-size: 15px;
+}
+
+.thumbnail-main
+{
+	width: 248px;
+	height: 236px;
 }
