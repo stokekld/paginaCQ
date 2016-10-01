@@ -189,7 +189,27 @@ body {
 	margin: 20px 0 20px 0;
 }
 
+.thumbnail-main
+{
+	/*width: 248px;*/
+	height: 236px;
+}
+
+.thumbnail-main img
+{
+	width: 150px;
+}
+
+@media (max-width: 980px)
+{
+	.modulo_in_content
+	{
+		font-size: 15px;
+	}
+}
+
 /*----------End Principal----------*/
+
 .profilecard
 {
 	margin-bottom: 0px;
@@ -199,10 +219,4 @@ body {
 {
 	text-align: justify;
 	font-size: 15px;
-}
-
-.thumbnail-main
-{
-	width: 248px;
-	height: 236px;
 }
