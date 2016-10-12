@@ -30,11 +30,3 @@ modulo.click(function(e){
     $(this).parent().addClass("active");
     
 });
-
-$().ready(function() {
-
-    $('.kwicks').kwicks({
-        maxSize : 250,
-        behavior: 'menu'
-    });
-});

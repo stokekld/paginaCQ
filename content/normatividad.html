@@ -1,38 +1,6 @@
-<style type="text/css">
-	.kwicks
-	{
-		width: 100%;
-	}
-
-	.kwicks li img
-	{
-		height: 350px;
-	}
-
-	.kwicks li p
-	{
-		background: rgba(28,61,108,0.3);
-		position: absolute;
-		bottom: 0px;
-		left: 1%;
-		overflow: hidden;
-		width: 250px;
-	}
-	.kwicks li p a
-	{
-		font-weight: bold;
-		font-size: 20px;
-		color: #c5911f;
-	}
-
-	.slider-line
-	{
-		margin-top: 60px;
-	}
-</style>
 <div class="row slider-line">
-	<div class="col-md-8 col-md-offset-2">
-		<ul class='kwicks kwicks-horizontal'>
+	<div class="col-md-12 col-lg-8 col-lg-offset-2">
+		<ul class='kwicks kwicks-horizontal' id="kwicks-norma">
 	        <li id='panel-1'>
 	        	<img src="http://s2.glbimg.com/ET9nZjgKc-39LMlRVAQpJNqCwAMCAIyRCHo48KIOK9RIoz-HdGixxa_8qOZvMp3w/e.glbimg.com/og/ed/f/original/2013/06/06/estatuto_nascituro_projetol.jpg">
 	        	<p><a target="blank" href="http://www.caabqys.unam.mx/ESTATUTO_GENERAL_DE_LA_UNAM.pdf">Estatuto General de la UNAM</a></p>
@@ -57,10 +25,11 @@
 	</div>
 </div>
 <script type="text/javascript">
-	$().ready(function() {
-	            $('.kwicks').kwicks({
-	                maxSize : 450,
-	                behavior: 'menu'
-	            });
-	        });
+$().ready(function() {
+    $(".kwicks").kwicks({
+        maxSize : "82%",
+        behavior: 'menu'
+    });
+    $(".kwicks").kwicks('expand', 0);
+});
 </script>

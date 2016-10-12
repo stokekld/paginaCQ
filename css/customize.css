@@ -210,13 +210,186 @@ body {
 
 /*----------End Principal----------*/
 
+/*----------Quienes----------*/
+
+.quienes-panel
+{
+	text-align: justify;
+	font-size: 15px;
+}
+
+.quienes-panel h2
+{
+	font-weight: bold;
+}
+
+/*----------End Quienes----------*/
+
+/*----------Coordinacion----------*/
+
 .profilecard
 {
 	margin-bottom: 0px;
 }
 
-.quienes-panel p
+/*----------End Coordinacion----------*/
+
+/*----------Comisiones----------*/
+.miniaturas-com a
 {
-	text-align: justify;
-	font-size: 15px;
+    font-size: 30px;
 }
+/*----------End Comisiones----------*/
+
+/*----------Normatividad----------*/
+.slider-line
+{
+	height: 390px;
+}
+
+#kwicks-norma
+{
+	width: 100%;
+}
+
+#kwicks-norma li img
+{
+	width: 670px;
+	height: 350px;
+}
+
+#kwicks-norma li p
+{
+	background: url("http://enes.unam.mx/css/img/bg_tit_slider.png");
+	position: absolute;
+	top: 0px;
+	right: 1%;
+	overflow: hidden;
+	width: 300px;
+}
+
+@media (max-width: 1200px)
+{
+	#kwicks-norma li p
+	{
+		width: 250px;
+	}
+
+}
+#kwicks-norma li p a
+{
+	font-weight: bold;
+	font-size: 19px;
+	color: rgba(206,180,80,1);
+}
+/*----------End Normatividad----------*/
+
+/*----------Comisiones (permanentes y especiales)----------*/
+
+.slider-cuadro
+{
+    height: 650px;
+}
+
+.kv-cuadro {
+    width: 100%;
+    height: 600px;
+}
+
+.kv-cuadro > li {
+    width: 100%;
+    height: 300px;
+}
+
+.kh-cuadro {
+    width: 100%;
+    height: 100%;
+}
+.kh-cuadro > li {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-color: #ffaa00;
+}
+
+.kh-cuadro > li > img {
+    width: 100%;
+    position: absolute;
+}
+
+.k-cuadro li p
+{
+    background: url("http://enes.unam.mx/css/img/bg_tit_slider.png");
+    position: absolute;
+    bottom: 0px;
+    left: 1%;
+    overflow: hidden;
+    width: 250px;
+}
+
+.k-cuadro li p a
+{
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(206,180,80,1);
+}
+
+@media (max-width: 500px)
+{
+    .slider-cuadro
+    {
+        height: 320px;
+    }
+
+    .kv-cuadro
+    {
+        height: 250px;
+    }
+
+    .kv-cuadro > li
+    {
+        height: 125px;
+    }
+
+    .k-cuadro li p
+    {
+        width: 120px;
+    }
+
+    .k-cuadro li p a
+    {
+        font-size: 9px;
+    }
+
+}
+@media (max-width: 700px)
+{
+    .slider-cuadro
+    {
+        height: 520px;
+    }
+
+    .kv-cuadro
+    {
+        height: 500px;
+    }
+
+    .kv-cuadro > li
+    {
+        height: 250px;
+    }
+
+    .k-cuadro li p
+    {
+        width: 200px;
+    }
+
+    .k-cuadro li p a
+    {
+        font-size: 12px;
+    }
+
+}
+
+/*----------End Comisiones----------*/
+
