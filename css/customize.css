@@ -254,8 +254,8 @@ body {
 
 #kwicks-norma li img
 {
-	width: 670px;
-	height: 350px;
+	width: 900px;
+	height: 400px;
 }
 
 #kwicks-norma li p
@@ -263,7 +263,7 @@ body {
 	background: url("http://enes.unam.mx/css/img/bg_tit_slider.png");
 	position: absolute;
 	top: 0px;
-	right: 1%;
+	left: 1%;
 	overflow: hidden;
 	width: 300px;
 }
