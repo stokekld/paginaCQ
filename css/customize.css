@@ -309,11 +309,11 @@ body {
     height: 100%;
     width: 50%;
     float: left;
-    background-color: #ffaa00;
+    background-color: #fff;
 }
 
 .kh-cuadro > li > img {
-    width: 100%;
+    /*width: 100%;*/
     position: absolute;
 }
 
