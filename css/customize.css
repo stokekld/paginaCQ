@@ -47,6 +47,22 @@
 	font-size: 17px;
 }
 
+@media (max-width: 1200px)
+{
+	#menu li
+	{
+		padding: 0;
+	}
+}
+
+@media (max-width: 992px)
+{
+	#menu li a
+	{
+		font-size: 10px;
+	}
+}
+
 #menu li a:hover
 {
 	background-color: #c5911f;
@@ -89,11 +105,6 @@ body {
 {
 	color: white;
 	font-weight: bold;
-}
-
-.footer img
-{
-	width: 30px;
 }
 
 .link-consejos
@@ -143,7 +154,7 @@ body {
 
 #content
 {
-	margin: 90px 0 100px 0;
+	margin: 50px 0 100px 0;
 }
 
 @media (max-width: 667px)
@@ -157,6 +168,18 @@ body {
 /*----------End Content----------*/
 
 /*----------Principal----------*/
+.slider-banner
+{
+    margin-top: -55px;
+}
+
+@media (max-width: 667px)
+{
+    .slider-banner
+    {
+        margin-top: -95px;
+    }    
+}
 
 .miniaturas
 {
@@ -165,13 +188,17 @@ body {
 
 .thumbnail-main
 {
-	/*width: 248px;*/
-	height: 236px;
+    border: 0;
 }
 
 .thumbnail-main img
 {
-	width: 150px;
+	width: 235px;
+}
+
+.modulo_in_content
+{
+    font-size: 20px;
 }
 
 @media (max-width: 980px)
@@ -180,6 +207,94 @@ body {
 	{
 		font-size: 15px;
 	}
+}
+
+.div-red
+{
+    position: absolute;
+    top: 10%;
+    left: -51px;
+    z-index: 100;
+}
+
+@media (max-width: 992px)
+{
+	.div-red
+	{
+    	left: 0px;
+	}
+}
+
+.logo-red
+{
+    display: block;
+    width: 50px;
+    margin: 5px 0;
+}
+
+.evento-info
+{
+    width: 100%;
+    border-bottom: 1px solid grey;
+    margin-bottom: 15px; 
+    display: block;
+}
+
+.evento-head div
+{
+    display: inline-block;
+}
+
+.evento-titulo
+{
+    width: 80%;
+    clear: both;
+    text-align: center;
+}
+
+.evento-titulo h2
+{
+    margin: 0;
+    color: #1c3d6c;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.evento-fecha
+{
+    width: 19%;
+    float: right;
+    text-align: center;
+}
+
+.evento-fecha p
+{
+    color: white;
+    font-weight: bold;
+    margin: 0;
+
+}
+
+.evento-fecha .dia
+{
+    font-size: 30px;
+}
+
+.evento-fecha .mes
+{
+    font-size: 20px;
+}
+
+.evento-body
+{
+    margin: 5px 0;
+    width: 79%;
+}
+
+.evento-body p
+{
+    display: block;
+    text-align: justify;
 }
 
 /*----------End Principal----------*/
