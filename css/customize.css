@@ -316,7 +316,7 @@ body {
 /*----------Normatividad----------*/
 .slider-line
 {
-	height: 390px;
+	height: 450px;
 }
 
 #kwicks-norma
@@ -326,9 +326,16 @@ body {
 
 #kwicks-norma li img
 {
-	width: 900px;
-	height: 400px;
+	width: 980px;
 }
+
+/*@media (min-width: 1200px)
+{
+    #kwicks-norma li img
+    {
+        width: 610px;
+    }
+}*/
 
 #kwicks-norma li p
 {
