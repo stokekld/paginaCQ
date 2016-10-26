@@ -209,29 +209,6 @@ body {
 	}
 }
 
-.div-red
-{
-    position: absolute;
-    top: 10%;
-    left: -51px;
-    z-index: 100;
-}
-
-@media (max-width: 992px)
-{
-	.div-red
-	{
-    	left: 0px;
-	}
-}
-
-.logo-red
-{
-    display: block;
-    width: 50px;
-    margin: 5px 0;
-}
-
 .evento-info
 {
     width: 100%;
@@ -295,6 +272,12 @@ body {
 {
     display: block;
     text-align: justify;
+}
+
+.noticias ul
+{
+    list-style-image: url("../images/list.png");
+    font-size: 16px;
 }
 
 /*----------End Principal----------*/
@@ -481,4 +464,13 @@ body {
 }
 
 /*----------End Comisiones----------*/
+
+/*----------Historia----------*/
+
+#img-historia
+{
+    width: 100%;
+}
+
+/*----------End Historia----------*/
 
