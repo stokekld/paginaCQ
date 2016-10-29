@@ -18,11 +18,35 @@
 	margin: 15px 20%;
 }
 
+#logo_caabqys_min
+{
+    display: none;
+}
+
 #menu
 {
-	border-color: #1c3d6c;
-	background: #1c3d6c;
-	margin: 4% 0;
+    border-color: #1c3d6c;
+    background: #1c3d6c;
+    margin: 4% 0;
+}
+
+@media (max-width: 767px)
+{
+    .logo-div
+    {
+        display: none;
+    }
+
+    #logo_caabqys_min
+    {
+        display: inline;
+        width: 100px;
+    }
+
+    #menu
+    {
+        margin: 1% 0;
+    }
 }
 
 #menu ul
@@ -161,7 +185,7 @@ body {
 {
 	#content
 	{
-		margin: 90px 0 150px 0;
+		margin: 40px 0 150px 0;
 	}
 }
 
@@ -280,6 +304,52 @@ body {
     font-size: 16px;
 }
 
+.noticias ul li
+{
+    margin-bottom: 10px;
+}
+
+.noticias ul li a
+{
+    color: black;
+}
+
+.redes
+{
+    position: fixed;
+    top: 40%;
+    left: 2px;
+    z-index: 100;
+}
+
+.logo-redes img
+{
+    display: block;
+    width: 40px;
+    margin-bottom: 5px;
+    transition:0.5s;
+    -moz-transition:0.5s;
+    -webkit-transition:0.5s;
+    -o-transition:0.5s;
+}
+
+.logo-redes img:hover
+{
+    width: 50px;
+}
+
+@media (max-width: 767px)
+{
+    .logo-redes img
+    {
+        width: 30px;
+    }
+    .logo-redes img:hover
+    {
+        width: 30px;
+    }
+}
+
 /*----------End Principal----------*/
 
 /*----------Quienes----------*/
@@ -329,17 +399,17 @@ body {
 	width: 980px;
 }
 
-/*@media (min-width: 1200px)
+@media (max-width: 768px)
 {
     #kwicks-norma li img
     {
         width: 610px;
     }
-}*/
+}
 
 #kwicks-norma li p
 {
-	background: url("http://enes.unam.mx/css/img/bg_tit_slider.png");
+	background: url("../images/fondo_slider.png");
 	position: absolute;
 	top: 0px;
 	left: 1%;
