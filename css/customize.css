@@ -509,7 +509,7 @@ body {
 
 .k-cuadro li p
 {
-    background: url("http://enes.unam.mx/css/img/bg_tit_slider.png");
+    background: url("../images/fondo_slider.png");
     position: absolute;
     bottom: 0px;
     left: 1%;
