@@ -113,7 +113,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 190px;
+  height: 215px;
   background-color: #1c3d6c;
 }
 
@@ -121,14 +121,8 @@ body {
 {
 	.footer
 	{
-		height: 245px;
+		height: 300px;
 	}
-}
-
-.footer p
-{
-	color: white;
-	font-weight: bold;
 }
 
 .link-consejos
@@ -163,6 +157,53 @@ body {
 .info-consejo
 {
 	margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.tooltip-creditos
+{
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-creditos .tooltip-creditos-text
+{
+    color: #31708f;
+    bottom: 101%;
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    background-color: #d9edf7;
+    width: 200px;
+    margin-left: -100px;
+    left: 50%;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 11px;
+}
+
+.tooltip-creditos .tooltip-creditos-text p
+{
+    margin: 0;
+}
+
+.tooltip-creditos .tooltip-creditos-text:after
+{
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #d9edf7 transparent transparent transparent;
+}
+
+.tooltip-creditos:hover .tooltip-creditos-text
+{
+    visibility: visible;
 }
 
 #counter
@@ -178,14 +219,14 @@ body {
 
 #content
 {
-	margin: 50px 0 100px 0;
+	margin: 50px 0 130px 0;
 }
 
 @media (max-width: 667px)
 {
 	#content
 	{
-		margin: 40px 0 150px 0;
+		margin: 40px 0 200px 0;
 	}
 }
 

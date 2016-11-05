@@ -1,32 +1,53 @@
-page.base('/control');
 
-page('/', carga); //principal
-page();
+$( document ).ready(function() {
 
-function carga(ctx){
+	var dropdown = $(".dropdown");
+	var modulo = $(".modulo");
+	var hash = window.location.hash;
+	var link = $("a[href$='" + hash + "']");
 
-    pagina = ctx.hash;
-    ruta = "./content/" + pagina + ".html";
+	console.log(link);
 
-    if (pagina == "")
-        ruta = "./content/principal.html";
+    carga(hash);
+    ilumina(link);
 
-    $("#content").hide().load(ruta).fadeIn("500");
+	dropdown.mouseover(function(){
+	    $(this).addClass("open");
+	}).mouseout(function(){
+	    dropdown.removeClass("open");
+	});
+	
+	modulo.click(function(e){
 
-}
+	    ilumina($(this));
+	    
+	});
 
-var dropdown = $(".dropdown");
-var modulo = $(".modulo");
+	$(window).on('hashchange',function(){ 
+	    carga(location.hash);
+	});
 
-dropdown.mouseover(function(){
-    $(this).addClass("open");
-}).mouseout(function(){
-    dropdown.removeClass("open");
+	function carga(hash){
+
+		var content = $("#content");
+
+	    pagina = hash.substring(1);
+	    ruta = "./content/" + pagina + ".html";
+
+	    if (pagina == "")
+	        ruta = "./content/principal.html";
+
+	    content.hide().load(ruta).fadeIn("500");
+
+	};
+
+	function ilumina(link){
+
+		modulo.parent().removeClass("active");
+		link.parent().addClass("active");
+
+	}
+
+	
 });
 
-modulo.click(function(e){
-
-    modulo.parent().removeClass("active");
-    $(this).parent().addClass("active");
-    
-});
